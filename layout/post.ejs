@@ -12,17 +12,10 @@
     <%- page.content %>
   </div>
   <div class="post-meta">
-    <span class="post-time" style="color:#646060;font-size:13px"><%- date(page.date, "YYYY-MM-DD") %></span>
   </div>
 
   <div class="post-footer">
-    <% if (page.tags && page.tags.length){ %>
-      <%- list_tags(page.tags, {
-        show_count: false,
-        class: 'post-tag'
-      }) %>
-    <% } %>
-
+    <span class="post-time" style="color:#646060;font-size:13px"><%- date(page.date, "YYYY-MM-DD") %></span>
     <a href="#top" class="top"><%= __('Post.Top') %></a>
   </div>
 </article>
